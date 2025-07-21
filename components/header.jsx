@@ -43,7 +43,7 @@ const Header = async () => {
           </SignedIn>
 
           <SignedOut>
-            <SignInButton afterSignInUrl="/dashboard">
+            <SignInButton forceRedirectUrl="/dashboard" >
               <Button variant="outline">Login</Button>
             </SignInButton>
           </SignedOut>
