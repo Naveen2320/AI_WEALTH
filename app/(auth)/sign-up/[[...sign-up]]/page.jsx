@@ -3,7 +3,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <SignUp fallbackRedirectUrl="/dashboard" />
+    <SignUp afterSignUpUrl="/dashboard" fallbackRedirectUrl="/dashboard"  />
   )
 };
 
