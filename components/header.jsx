@@ -18,6 +18,7 @@ const Header = async () => {
             alt="AI_WEALTH LOGO"
             height={60}
             width={200}
+            priority  // Add this line
             className="h-12 w-auto object-contain"
           />
         </Link>

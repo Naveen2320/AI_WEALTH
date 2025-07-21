@@ -27,7 +27,8 @@ const clerk =  clerkMiddleware(async (auth, req) => {
 
     if (!userId && isProtectedRoute(req)) {
         const { redirectToSignIn } = await auth();
-        return redirectToSignIn();
+        return redirectToSignIn({ fallbackRedirectUrl: "/dashboard" }); // ✅ FIXED HERE
+
 
     }
 });

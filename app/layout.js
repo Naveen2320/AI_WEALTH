@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider fallbackRedirectUrl="/dashboard">
+    <ClerkProvider forceRedirectUrl="/dashboard">
 
     <html lang="en">
       <body
