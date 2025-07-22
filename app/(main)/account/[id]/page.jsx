@@ -19,9 +19,9 @@ const AccountsPage = async ({ params }) => {
 
   return (
     <div className="space-y-8 px-5">
-      <div className="flex gap-4 items-end justify-between">
+      <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:items-end sm:justify-between min-w-0">
         <div>
-          <h1 className="text-5xl sm:text-6xl font-bold  bg-gradient-to-r from-blue-600 to-purple-600 capitalize tracking-tighter pr-2  text-transparent bg-clip-text">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold break-words bg-gradient-to-r from-blue-600 to-purple-600 capitalize tracking-tight pr-2 text-transparent bg-clip-text">
             {account.name}
           </h1>
           <p className="text-muted-foreground">

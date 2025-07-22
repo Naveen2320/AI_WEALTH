@@ -210,8 +210,8 @@ const TransactionTable = ({ transactions }) => {
       )}
 
       {/**filters for transactions */}
-      <div className="flex flex-col sm:flex-row gap-4">
-        <div className="relative flex-1">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div className="relative w-full sm:max-w-sm">
           <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
           <Input
             className="pl-8"
@@ -221,9 +221,9 @@ const TransactionTable = ({ transactions }) => {
           />
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
           <Select value={typeFilter} onValueChange={setTypeFilter}>
-            <SelectTrigger>
+            <SelectTrigger className="w-full sm:w-[150px]">
               <SelectValue placeholder="All Types" />
             </SelectTrigger>
             <SelectContent>
@@ -236,7 +236,7 @@ const TransactionTable = ({ transactions }) => {
             value={recurringFilter}
             onValueChange={(value) => setRecurringFilter(value)}
           >
-            <SelectTrigger className="w-[150px]">
+            <SelectTrigger className="w-full sm:w-[180px]">
               <SelectValue placeholder="All Transactions" />
             </SelectTrigger>
             <SelectContent>
@@ -266,6 +266,7 @@ const TransactionTable = ({ transactions }) => {
               size="icon"
               onClick={handleClearFilters}
               title="Clear Filters"
+              className="w-full sm:w-auto"
             >
               <X className="h-4 w-5" />
             </Button>

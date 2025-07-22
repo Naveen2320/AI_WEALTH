@@ -10,6 +10,7 @@ import { format } from "date-fns";
 import { toast } from "sonner";
 import { Switch } from "@/components/ui/switch";
 
+
 import {
   Popover,
   PopoverContent,
@@ -89,6 +90,8 @@ const AddTransactionForm = ({
   const type = watch("type"); // to monitor the type change
   const isRecurring = watch("isRecurring");
   const date = watch("date");
+  const recurringInterval = watch("recurringInterval");
+
 
   const onSubmit = async (data) => {
     const formData = {
