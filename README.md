@@ -83,20 +83,9 @@ The landing page is designed to quickly build trust and guide users toward manag
 
 ---
 
-## ➕ Add Transaction (Manual & AI)
-
-![Add Transaction](./screenshots/add-transaction.png)
-
-**Features:**
-- Manually add income or expense transactions  
-- Assign category, date, and account  
-- Supports recurring and one-time transactions  
-
----
-
 ## 🤖 AI Receipt Scanning
 
-![AI Receipt](./screenshots/ai-receipt.png)
+![AI Receipt](./screenshots/ai-receipt-scan.png)
 
 **Features:**
 - Scan receipts using **Gemini AI**  
@@ -152,12 +141,11 @@ This caused invalid data to be saved.
 
 
 if (amount <= 0) return error;
-if (!category) return error;
 
 
 ### 3. Handling Large Transaction Volumes
 Manually managing 50+ daily transactions caused performance issues.  
-**Solution:** Optimized Supabase queries and indexed transaction data efficiently.
+**Solution:** Used pagination  and indexed transaction data efficiently.
 
 ---
 
