@@ -2,7 +2,7 @@
 
 AI-Wealth is an **AI-powered personal finance management platform** that helps users track income, expenses, budgets, and financial trends using intelligent automation and real-time analytics.
 
---- 
+---  
 
 ## 🚀 Problem Statement
 
